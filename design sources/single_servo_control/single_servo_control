@@ -65,14 +65,12 @@ architecture Behavioral of single_servo_control is
     end component;
 
     component sign2seg is
-        Port (
-            clk   : in STD_LOGIC;
-            rst   : in STD_LOGIC;
-            clear : in STD_LOGIC;
-            sign  : in STD_LOGIC;
-            seg   : out STD_LOGIC_VECTOR (6 downto 0)
-        );
-    end component;
+    Port (
+        clear : in  std_logic;
+        sign  : in  std_logic;
+        seg   : out std_logic_vector(6 downto 0)
+    );
+end component;
 
     signal sig_pos        : STD_LOGIC_VECTOR (7 downto 0);
     signal sig_sign       : STD_LOGIC;
@@ -128,13 +126,11 @@ begin
         );
 
     display_sign: sign2seg
-        port map (
-            clk   => CLK,
-            rst   => RST,
-            clear => RST,
-            sign  => sig_sign,
-            seg   => sig_seg_sign
-        );
+    port map (
+        clear => RST,       -- ou un autre signal si tu préfères
+        sign  => sig_sign,
+        seg   => sig_seg_sign
+    );
 
     -- Assign outputs
     SEG1   <= sig_seg1;

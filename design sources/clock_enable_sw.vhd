@@ -1,54 +1,76 @@
+-------------------------------------------------
+--! @brief Clock enable
+--! @version 1.3
+--! @copyright (c) 2019-2025 Tomas Fryza, MIT license
+--!
+--! This VHDL file generates pulses of the clock enable signal.
+--! Each pulse is one period of the clock signal wide, and its
+--! repetition is determined by the N_PERIODS generic.
 
+--! Developed using TerosHDL, Vivado 2020.2, and EDA Playground.
+--! Tested on Nexys A7-50T board and xc7a50ticsg324-1L FPGA.
+-------------------------------------------------
 
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
-use IEEE.MATH_REAL.ALL;
+library ieee;
+  use ieee.std_logic_1164.all;
 
-entity clock_enable_flexible is
-    generic (
-        PERIOD  : integer := 6; -- base period in clock cycles
-        RATIO   : integer := 5  -- multiplier when switch is active
-    );
-    Port ( 
-        clk     : in  STD_LOGIC; -- input clock signal
-        rst     : in  STD_LOGIC; -- synchronous reset
-        switch  : in  STD_LOGIC; -- switch to control ratio (e.g. button press)
-        pulse   : out STD_LOGIC  -- output pulse
-    );
-end clock_enable_flexible;
+-------------------------------------------------
 
-architecture Behavioral of clock_enable_flexible is
-    constant MAX_PERIOD       : integer := PERIOD * RATIO;
-    constant BITS_NEEDED      : integer := integer(ceil(log2(real(MAX_PERIOD + 1))));
+entity clock_en is
+  generic (
+    n_periods : integer := 3 --! Default number of clk periodes to generate one pulse
+  );
+  port (
+    clk   : in    std_logic; --! Main clock
+    rst   : in    std_logic; --! High-active synchronous reset
+    pulse : out   std_logic;  --! Clock enable pulse signal
+    SW_1  : in std_logic
+  );
+end entity clock_en;
 
-    signal sig_count          : std_logic_vector(BITS_NEEDED - 1 downto 0) := (others => '0');
-    signal sig_pulse          : std_logic := '0';
-    signal active_period      : integer;
+-------------------------------------------------
+
+architecture behavioral of clock_en is
+
+  --! Local counter
+  signal sig_count : integer range 0 to n_periods - 1;
+  signal ratio : integer := 1;
+
 begin
 
-    process(clk)
-    begin
-        if rising_edge(clk) then
-            if rst = '1' then
-                sig_count <= (others => '0');
-                sig_pulse <= '0';
-            else
-                if sig_count = active_period - 1 then
-                    sig_count <= (others => '0');
-                    sig_pulse <= '1';
-                else
-                    sig_count <= sig_count + 1;
-                    sig_pulse <= '0';
-                end if;
-            end if;
-        end if;
-    end process;
+  --! Count the number of clock pulses from zero to N_PERIODS-1.
+  p_clk_enable : process (clk) is
+  begin
+  
+    
 
-    -- Set period based on switch
-    active_period <= PERIOD when switch = '0' else PERIOD * RATIO;
+    if (rising_edge(clk)) then                   -- Synchronous process
+    
+    if (SW_1 = '1') then
+        ratio <= 2 ;
+    else 
+        ratio <= 1;
+    end if;
+    
+    
+    
+      if (rst = '1') then                        -- High-active reset
+        sig_count <= 0;
 
-    -- Output pulse
-    pulse <= sig_pulse;
+      -- Counting
+      elsif (sig_count < (n_periods*ratio - 1)) then
+        sig_count <= sig_count + 1;              -- Increment local counter
 
-end Behavioral;
+      -- End of counter reached
+      else
+        sig_count <= 0;
+      end if;                                    -- Each `if` must end by `end if`
+    end if;
+
+  end process p_clk_enable;
+
+  -- Generated pulse is always one clock long
+  pulse <= '1' when (sig_count = n_periods*ratio - 1) else
+           '0';
+
+end architecture behavioral;

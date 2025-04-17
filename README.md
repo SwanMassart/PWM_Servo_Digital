@@ -1,6 +1,6 @@
 # Topic3-PWM-Based-Servo-Motor-Controller
 \
-Mantvydas is responsible for programming\
+Mantvydas Klimavičius is responsible for programming\
 \
 Swan MASSART is responsible for programming\
 \

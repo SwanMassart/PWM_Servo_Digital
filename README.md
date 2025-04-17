@@ -1,12 +1,12 @@
 # Topic3-PWM-Based-Servo-Motor-Controller
 \
-Martin Garncarz is responsible for programming\
+Mantvydas is responsible for programming\
 \
-Matúš Citor is responsible for programming\
+Swan MASSART is responsible for programming\
 \
-Kamil Soukup is responsible for help with programming and help with filming the short app video + readme file\
+Marek Wilczewski is responsible for help with programming and help with filming the short app video + readme file\
 \
-Samuel Max Götzl is responsible for providing the servos, filming the short app video, creating the readme file and help with programming
+Roland Policsek is responsible for providing the servos, filming the short app video, creating the readme file and help with programming
 
 ## Full project
 link: https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/tree/master

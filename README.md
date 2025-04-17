@@ -9,7 +9,7 @@ Marek Wilczewski is responsible for help with programming and help with filming 
 Roland Policsek is responsible for providing the servos, filming the short app video, creating the readme file and help with programming
 
 ## Full project
-link: https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/tree/master
+link: https://github.com/SwanMassart/PWM_Servo_Digital
 
 ## Theoretical description and explanation
 Our group decided to make a PWM-Based Servo Motor Controller code. We want to create a controller that will turn the servo motor in the range of 100 degrees. There will be two independent servos connected to the Nexys board, where the function of controlling only one servo will be shown. With turning on or off the switch on the left, it will determine wheter the servo motors will be turning fast or slow (or differently said - rough or fine movement). with turning the right switches on or off will determine which of the connected servos will be operated and which will stay in their position.
@@ -111,7 +111,6 @@ Use the switch most to the left (SW15) to switch between fine and rough movement
 Press the lower button (BTND) to shut down the whole system. As long as this button is pressed, the servos, displays and LED diodes will be turned off.\
 \
 short app video:\
-https://youtu.be/wzy_NoTWGlA?si=6DzQUGHOYftg_hcf
 
 ## References
 

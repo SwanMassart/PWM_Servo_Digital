@@ -20,7 +20,7 @@ Next in use are switches SW0, SW1 and SW15. First two are meant to switch betwee
 Pmod ports of the FPGA marked as JA are used to connect the servos, specifically JA7 and JA8 as PWM output (see picture bellow)\
 <img src="https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/blob/main/images/Pmod_pinout.png" alt="Pmod out picture" /> 
 
-Servo link: https://www.savoxusa.com/products/savsb2274sg-be-black-edition-high-voltage
+Servo link: https://www.savoxusa.com/products/savsb2274sg-be-black-edition-high-voltage](https://www.friendlywire.com/projects/ne555-servo-safe/SG90-datasheet.pdf
 
 
 ## Software description

@@ -27,8 +27,7 @@ Servo used in the project: https://www.friendlywire.com/projects/ne555-servo-saf
 ## Software description
 
 ### Schematic
-
-[![imageSchematic](https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/blob/main/images/schematic.png)](https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/1745309690485.jpg)
+<img src="https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/1745309690485.jpg" />
 
 ### State diagram for BIN2BCD component
 

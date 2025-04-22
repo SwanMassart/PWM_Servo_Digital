@@ -8,7 +8,6 @@ Marek Wilczewski is responsible for help with programming and help with filming 
 \
 Roland Policsek is responsible for providing the servos, filming the short app video, creating the readme file and help with programming
 
-youtube video : https://youtube.com/shorts/tw2kckGUeao?feature=shared
 
 ## Full project
 link: https://github.com/SwanMassart/PWM_Servo_Digital
@@ -112,7 +111,7 @@ Use the switch most to the left (SW15) to switch between fine and rough movement
 \
 Press the lower button (BTND) to shut down the whole system. As long as this button is pressed, the servos, displays and LED diodes will be turned off.\
 \
-short app video:\
+short project video : https://youtube.com/shorts/tw2kckGUeao?feature=shared
 
 ## References
 

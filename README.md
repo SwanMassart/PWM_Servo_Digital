@@ -6,7 +6,7 @@ Swan MASSART is responsible for programming\
 \
 Marek Wilczewski is responsible for help with programming and help with filming the short app video + readme file\
 \
-Roland Policsek is responsible for providing the servos, filming the short app video, creating the readme file and help with programming
+Roland Policsek is responsible for presentation, filming the short app video, creating the readme file and help with programming
 
 
 ## Full project

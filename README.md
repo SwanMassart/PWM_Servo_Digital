@@ -55,7 +55,7 @@ Component Position takes input from BTNC, BTNL, BTNR buttons, and SW_Servo. BTNL
 
 <img src="https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/blob/main/images/Simulation/pwm_generator.png" alt="PWM generator Test Bench" />
 
-PWM Generator takes output signals from components clock enable and Position and determines the duty cycle of PWM and assigns the value to the signal 'pwm_out.' The width of the high pulse changes from 1000us to 2000us. It generates a PWM signal with a frequency of 333 Hz.
+The pwm_generator is a VHDL module that creates a PWM signal with a configurable duty cycle based on the input POS. It uses a counter that counts clock cycles up to a maximum value defined by C_END. The PWM output stays high from the start of the cycle until the counter reaches POS - 1, then goes low until the counter hits C_END - 1, after which it resets and starts again. The module only operates when en is high and resets both the counter and output when rst is active.
 
 #### BIN2BCD
 
@@ -117,3 +117,5 @@ short app video:\
 https://en.wikipedia.org/wiki/Double_dabble
 
 https://allaboutfpga.com/vhdl-code-for-binary-to-bcd-converter/
+
+https://susta.cz/doc/UvodDoVHDL2_sequential.pdf

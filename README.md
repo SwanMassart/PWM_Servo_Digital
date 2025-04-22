@@ -12,7 +12,7 @@ Roland Policsek is responsible for providing the servos, filming the short app v
 link: https://github.com/SwanMassart/PWM_Servo_Digital
 
 ## Theoretical description and explanation
-Our group decided to make a PWM-Based Servo Motor Controller code. We want to create a controller that will turn the servo motor in the range of 100 degrees. There will be two independent servos connected to the Nexys board, where the function of controlling only one servo will be shown. With turning on or off the switch on the left, it will determine wheter the servo motors will be turning fast or slow (or differently said - rough or fine movement). with turning the right switches on or off will determine which of the connected servos will be operated and which will stay in their position.
+Our group decided to make a PWM-Based Servo Motor Controller code. We want to create a controller that will turn the servo motor in the range from -90 to 90 degrees. There will be two independent servos connected to the Nexys board, where the function of controlling only one servo will be shown. With turning on or off the switch on the left, it will determine wheter the servo motors will be turning fast or slow (or differently said - rough or fine movement). with turning the right switches on or off will determine which of the connected servos will be operated and which will stay in their position.
 
 ## Hardware description of demo application
 On the FPGA board there are BTNR, BTNL, BTND and BTNC buttons used. BNTR and BTNL are used to change duty of PWM signal, BTND button is used to shut the system down while it is being pressed and BTNC is used as center (reset) button. This button resets settings of PWM signal and duty is defaultly on 50 %. \

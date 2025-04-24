@@ -29,13 +29,6 @@ Servo used in the project: https://www.friendlywire.com/projects/ne555-servo-saf
 ### Schematic
 <img src="https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/SCTICS.png" />
 
-### State diagram for BIN2BCD component
-
-<img src="https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/blob/main/images/BIN2BCD_State_Diagram.jpg" alt="State diagram fro BIN2BCD" >
-i1 = bin_counter == BIN
-
-i2 = shift_counter == 7
-
 ### Component(s) simulation
 
 #### Enable Clock Ratio

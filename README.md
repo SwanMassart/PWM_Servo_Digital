@@ -99,7 +99,7 @@ Use the two switches most to the right (SW0, SW1) to activate/deactivate the two
 Press the middle button (BTNC) to reset the position of the servos to the middle position (50 degrees).\
 \
 \
-![image](https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/blob/main/images/sw_speed.jpg)\
+![image](https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/l_switch.jpg)\
 \
 Use the switch most to the left (SW15) to switch between fine and rough movement of the two servos, technically between slow and fast movement.\
 \

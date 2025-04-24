@@ -96,7 +96,7 @@ Press the left or right button (BTNL/BTNR) to move the servo in the chosen orien
 Use the two switches most to the right (SW0, SW1) to activate/deactivate the two connected servos. If only SW0 is turned on, only the right servo will be working and vice versa.\
 \
 \
-![imageBTNC](https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/blob/main/images/btnc.jpg)\
+![imageBTNC](https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/full_circuit.jpg)\
 \
 Press the middle button (BTNC) to reset the position of the servos to the middle position (50 degrees).\
 \

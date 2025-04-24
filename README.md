@@ -34,7 +34,7 @@ Servo used in the project: https://www.friendlywire.com/projects/ne555-servo-saf
 ### Component(s) simulation
 
 <img src="https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/%7BD32BF380-1D11-4EB1-8826-C83B300E2BF2%7D.png" />
-
+bcd1 is from 0 to 9, bcd10 is from 0 to 9 and finally bdc100 is 0 and 1
 
 ## Instructions
 \

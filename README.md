@@ -34,8 +34,8 @@ Servo used in the project: https://www.friendlywire.com/projects/ne555-servo-saf
 ### Component(s) simulation
 
 <img src="https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/%7BD32BF380-1D11-4EB1-8826-C83B300E2BF2%7D.png" />
-
-
+We can observe that the bcd1, bcd10 and bcd100 is rising incrimentally from 0 to 100
+bcd1 is from 0 to 9, bcd10 is from 0 to 9 and bcd100 is 0 and 1
 ## Instructions
 \
 Press the left or right button (BTNL/BTNR) to move the servo in the chosen orientation, in the total range of 100 degrees from left to right. The actual position will be displayed on the 7-segment displays in degrees (0-100).\

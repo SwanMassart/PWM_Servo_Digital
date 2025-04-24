@@ -18,7 +18,7 @@ The goal was to make PWM-Based Servo Motor Controller code. We wanted to create 
 
 ## Hardware description of demo application
 The FPGA board contains BTNR, BTNL, BTND and BTNC buttons to controll the servos. BNTR and BTNL are used to change duty of PWM signal, BTND button is used to shut the system down while it is being pressed and BTNC is used as center button. This button resets settings of PWM signal and duty is defaultly on 50 %. \
-Next in use are switches SW0, SW1 and SW15. First two are mean    t to switch between up to two servos, depending on which of the switches is turned on, the chosen servo will be moving, and the last one to the left is set to switch between fine and rough regulation of duty.\
+Next in use are switches SW0, SW1 and SW15. First two are meant to switch between up to two servos, depending on which of the switches is turned on, the chosen servo will be moving, and the last one to the left is set to switch between fine and rough regulation of duty.\
 Pmod ports of the FPGA marked as JA are used to connect the servos, specifically JA7 and JA8 as PWM output\
 The servo signal wire is conneted to the PWM control pin 7 and 8 on the board.
 <img src="https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/blob/main/images/Pmod_pinout.png" alt="Pmod out picture" /> 
@@ -38,7 +38,7 @@ bcd1 is from 0 to 9, bcd10 is from 0 to 9 and finally bdc100 is 0 and 1
 
 ## Instructions
 \
-Press the left or right button (BTNL/BTNR) to move the servo in the chosen orientation, in the total range of 100 degrees from left to right. The actual position will be displayed on the 7-segment displays in degrees (0-100).\
+To move servo in the chosen drection, press the left (BTNL) or right (BTNR) button, in the total range of 100 degrees from left to right. The actual position will be displayed on the 7-segment displays in degrees (0-100).\
 \
 \
 ![imageBTNR2](https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/r_button.jpg)\

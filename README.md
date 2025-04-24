@@ -54,7 +54,7 @@ Press the middle button (BTNC) to reset the position of the servos to the middle
 \
 ![image](https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/l_switch.jpg)\
 \
-Use the switch most to the left (SW15) to switch between fine and rough movement of the two servos, technically between slow and fast movement.\
+Use the switch SW15 residing most to the left to switch between slow and fast movement.\
 \
 \
 ![imageBTND](https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/lower.jpg)\

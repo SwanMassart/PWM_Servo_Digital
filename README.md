@@ -29,7 +29,7 @@ Servo used in the project: https://www.friendlywire.com/projects/ne555-servo-saf
 ## Software description
 
 ### Schematic
-<img src="https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/%7B7E7E4895-F152-455E-8090-519224CDA0DE%7D.png" />
+<img src="(https://github.com/SwanMassart/PWM_Servo_Digital/tree/main/pictures)" />
 
 ### Component(s) simulation
 

@@ -84,14 +84,12 @@ It takes components: Position, BIN2BCD, PWM Generator, and three instances of BI
 
 
 ## Instructions
-
-![imageBTNR1](https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/blob/main/images/btnr1.jpg)\
 \
 Press the left or right button (BTNL/BTNR) to move the servo in the chosen orientation, in the total range of 100 degrees from left to right. The actual position will be displayed on the 7-segment displays in degrees (0-100).\
 \
 \
-![imageBTNR2](https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/blob/main/images/btnr2.jpg)
-![imageBTNL](https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/blob/main/images/btnl.jpg)\
+![imageBTNR2](https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/r_button.jpg)\
+![imageBTNL](https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/rigt_button.jpg)\
 \
 Use the two switches most to the right (SW0, SW1) to activate/deactivate the two connected servos. If only SW0 is turned on, only the right servo will be working and vice versa.\
 \

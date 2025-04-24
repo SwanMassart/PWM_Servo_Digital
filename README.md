@@ -14,7 +14,7 @@ Roland Policsek is responsible for presentation, filming the short app video, cr
 link: https://github.com/SwanMassart/PWM_Servo_Digital
 
 ## Theoretical description and explanation
-The goal was to make PWM-Based Servo Motor Controller that will turn the servo motor in the range from -90 to 90 degrees. There will be two independent servos connected to the Nexys board, where the function of controlling only one servo will be shown. By toggling the switch on the left we can decide between fast and slow mode. By switching the two swtiches on the right we can decide which servo to be rotated.
+The goal was to make PWM-Based Servo Motor Controller that will turn the servo motor in the range from -90 to 90 degrees. There will be two independent servos connected to the Nexys board, where the function of controlling only one servo will be shown. By toggling the switch on the left we can decide between fast and slow mode. By switching the two swtiches on the right we can decide which servo to be rotated. All of that is implemented on the Nexys A7-50T FPGA board using VHDL.
 
 ## Hardware description of demo application
 The FPGA board contains BTNR, BTNL, BTND and BTNC buttons to controll the servos. BNTR and BTNL are used to change duty of PWM signal, BTND button is used to shut the system down while it is being pressed and BTNC is used as center button. This button resets settings of PWM signal and duty is defaultly on 50 %. \

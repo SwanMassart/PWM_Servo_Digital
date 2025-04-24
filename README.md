@@ -112,8 +112,6 @@ short project video : https://youtube.com/shorts/tw2kckGUeao?feature=shared
 
 ## References
 
-https://en.wikipedia.org/wiki/Double_dabble
-
 https://allaboutfpga.com/vhdl-code-for-binary-to-bcd-converter/
 
 https://susta.cz/doc/UvodDoVHDL2_sequential.pdf

@@ -8,7 +8,7 @@ Marek Wilczewski is responsible for help with programming and help with filming 
 \
 Roland Policsek is responsible for presentation, filming the short app video, creating the readme file and help with programming
 
-"Les absences ont toujours tort."
+"Les absents ont toujours tort."
 
 ## Full project
 link: https://github.com/SwanMassart/PWM_Servo_Digital

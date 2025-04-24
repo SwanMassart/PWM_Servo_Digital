@@ -17,9 +17,9 @@ link: https://github.com/SwanMassart/PWM_Servo_Digital
 The goal was to make PWM-Based Servo Motor Controller code. We wanted to create a controller that will turn the servo motor in the range from -90 to 90 degrees. There will be two independent servos connected to the Nexys board, where the function of controlling only one servo will be shown. By toggling the switch on the left we can decide between fast and slow mode. By switching the two swtiches on the right we can decide which servo to be rotated.
 
 ## Hardware description of demo application
-On the FPGA board there are BTNR, BTNL, BTND and BTNC buttons used. BNTR and BTNL are used to change duty of PWM signal, BTND button is used to shut the system down while it is being pressed and BTNC is used as center (reset) button. This button resets settings of PWM signal and duty is defaultly on 50 %. \
+The FPGA board contains BTNR, BTNL, BTND and BTNC buttons to controll the servos. BNTR and BTNL are used to change duty of PWM signal, BTND button is used to shut the system down while it is being pressed and BTNC is used as center button. This button resets settings of PWM signal and duty is defaultly on 50 %. \
 Next in use are switches SW0, SW1 and SW15. First two are mean    t to switch between up to two servos, depending on which of the switches is turned on, the chosen servo will be moving, and the last one to the left (SW15) is set to switch between fine and rough regulation of duty.\
-Pmod ports of the FPGA marked as JA are used to connect the servos, specifically JA7 and JA8 as PWM output (see picture bellow)\
+Pmod ports of the FPGA marked as JA are used to connect the servos, specifically JA7 and JA8 as PWM output\
 The servo signal wire is conneted to the PWM control pin 7 and 8 on the board.
 <img src="https://github.com/Th0rgrlm/Topic3-PWM-Based-Servo-Motor-Controller/blob/main/images/Pmod_pinout.png" alt="Pmod out picture" /> 
 
@@ -29,13 +29,13 @@ Servo used in the project: https://www.friendlywire.com/projects/ne555-servo-saf
 ## Software description
 
 ### Schematic
-<img src="https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/IMG_20250424_172231.jpg" />
+<img src="https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/%7B7E7E4895-F152-455E-8090-519224CDA0DE%7D.png" />
 
 ### Component(s) simulation
 
 <img src="https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/%7BD32BF380-1D11-4EB1-8826-C83B300E2BF2%7D.png" />
-We can observe that the bcd1, bcd10 and bcd100 is rising incrimentally from 0 to 100
-bcd1 is from 0 to 9, bcd10 is from 0 to 9 and bcd100 is 0 and 1
+
+
 ## Instructions
 \
 Press the left or right button (BTNL/BTNR) to move the servo in the chosen orientation, in the total range of 100 degrees from left to right. The actual position will be displayed on the 7-segment displays in degrees (0-100).\

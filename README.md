@@ -49,7 +49,7 @@ Use the two switches most to the right (SW0, SW1) to activate/deactivate the two
 \
 ![imageBTNC](https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/full_circuit.jpg)\
 \
-Press the middle button (BTNC) to reset the position of the servos to the middle position (50 degrees).\
+Press the middle button (BTNC) to reset the position of the servos to the middle position.\
 \
 \
 ![image](https://github.com/SwanMassart/PWM_Servo_Digital/blob/main/pictures/l_switch.jpg)\
